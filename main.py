@@ -5,17 +5,20 @@ if __name__ == "__main__":
     kitty = Animal("kitty", "feline")
     fido = Dog("Fido", "Canine", "Bulldog")
     
+
     print(kitty)
-    print(fido)
     kitty.speak()
+    
+    print(fido)
     fido.speak()
 
+    print("\nAll tracked animals: ")
+    for animal in Animal.all_animals:
+        print(f"  - {animal}")
 
-    # TODO: Print the Animal instance
-    # TODO: Call the method to make a generic animal sound
 
-    # TODO: Create an instance of the Dog class
-    # TODO: Print the Dog instance
-    # TODO: Call the method to make the dog-specific sound
+   
+
+
 
     # TODO print out all the animals
